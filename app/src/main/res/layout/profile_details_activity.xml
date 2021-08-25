@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/userLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Details"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID: "
+        app:layout_constraintRight_toLeftOf="@+id/userID_detail"
+        app:layout_constraintTop_toBottomOf="@+id/userLabel"
+        app:layout_constraintBottom_toBottomOf="@id/userID_detail"
+        app:layout_constraintTop_toTopOf="@id/userID_detail">
+
+    </TextView>
+    <TextView
+        android:id="@+id/userID_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/userLabel"
+        android:text="1"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+    <ImageView
+        android:id="@+id/user_image_detail"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/no_camera"
+        app:layout_constraintTop_toBottomOf="@+id/userID_detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        app:layout_constraintTop_toBottomOf="@id/user_image_detail"
+        app:layout_constraintRight_toLeftOf="@+id/user_name_detail"
+        app:layout_constraintTop_toTopOf="@id/user_name_detail"
+        app:layout_constraintBottom_toBottomOf="@id/user_name_detail">
+
+    </TextView>
+    <TextView
+        android:id="@+id/user_name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/user_image_detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID: "
+        app:layout_constraintTop_toBottomOf="@id/user_name_detail"
+        app:layout_constraintRight_toLeftOf="@id/user_Email_deatil"
+        app:layout_constraintTop_toTopOf="@id/user_Email_deatil"
+        app:layout_constraintBottom_toBottomOf="@id/user_Email_deatil">
+
+    </TextView>
+    <TextView
+        android:id="@+id/user_Email_deatil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="emailID"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

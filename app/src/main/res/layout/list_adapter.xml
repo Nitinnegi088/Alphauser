@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/user_image"
+        app:layout_constraintBottom_toBottomOf="@id/user_image"
+        android:layout_marginLeft="5dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:layout_marginRight="5dp">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toRightOf="@id/userId">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toRightOf="@id/user_image"
+        android:text="Nitin Negi"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/user_image"
+        app:layout_constraintBottom_toBottomOf="@id/user_image"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/user_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintLeft_toRightOf="@id/user_name"
+        android:text="nitin.negi088@gmail.com"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/user_image"
+        app:layout_constraintBottom_toBottomOf="@id/user_image"
+        android:layout_marginLeft="10dp">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

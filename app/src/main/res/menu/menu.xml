@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/photo"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:orderInCategory="100"
+        android:title="Photo" />
+
+    <item
+        android:id="@+id/video"
+        android:icon="@android:drawable/ic_menu_call"
+        android:orderInCategory="100"
+        android:title="Video" />
+
+
+    <item
+        android:id="@+id/map"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        android:title="Map" />
+</menu>

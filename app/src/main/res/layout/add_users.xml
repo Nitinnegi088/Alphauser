@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_user_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Add User"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter ID:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/id_dialog"
+        app:layout_constraintBottom_toBottomOf="@id/id_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/add_user_label">
+
+    </TextView>
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/id_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID"
+        app:layout_constraintTop_toBottomOf="@+id/add_user_label"
+        app:layout_constraintLeft_toRightOf="@id/fnamedialoglabel">
+
+    </EditText>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/fnamedialoglabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/fnamedialog"
+        app:layout_constraintTop_toBottomOf="@+id/id_dialog">
+
+    </TextView>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/fnamedialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter first name"
+        app:layout_constraintTop_toBottomOf="@+id/id_dialog"
+        app:layout_constraintLeft_toRightOf="@id/fnamedialoglabel">
+
+    </EditText>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/lnamedialoglabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fnamedialoglabel"
+        app:layout_constraintTop_toTopOf="@id/lnamedialog"
+        app:layout_constraintBottom_toBottomOf="@id/lnamedialog">
+
+    </TextView>
+    <EditText
+        android:id="@+id/lnamedialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter last name"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/fnamedialog"
+        app:layout_constraintLeft_toRightOf="@id/lnamedialoglabel">
+
+    </EditText>
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/user_Email_dialog_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID:"
+        app:layout_constraintTop_toBottomOf="@+id/lnamedialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/user_Email_dialog"
+        app:layout_constraintBottom_toBottomOf="@id/user_Email_dialog">
+    </TextView>
+
+    <EditText
+        android:id="@+id/user_Email_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter email ID"
+        app:layout_constraintLeft_toRightOf="@+id/user_Email_dialog_label"
+        app:layout_constraintTop_toBottomOf="@+id/lnamedialog">
+    </EditText>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/user_Email_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
